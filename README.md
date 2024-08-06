@@ -1,6 +1,6 @@
-# MultiSignWallet
+# MultiSignWallet - 简单功能实现
 
-MultiSignWallet 是一个基于 Solidity 开发的多签名钱包智能合约。它允许多个所有者共同管理以太坊资产，提高资金安全性和管理透明度。
+MultiSignWallet 是一个基于 Solidity 开发的多签名钱包智能合约的简单功能实现。
 
 ## 功能特性
 
@@ -9,4 +9,3 @@ MultiSignWallet 是一个基于 Solidity 开发的多签名钱包智能合约。
 - 交易确认：需要指定数量的所有者确认才能执行交易
 - 交易执行：达到确认阈值后，交易可以被执行
 - 查询待处理交易：可以获取所有待处理的交易列表
-
