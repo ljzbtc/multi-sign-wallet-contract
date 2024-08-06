@@ -1,19 +1,12 @@
-# Foundry Starter Kit
+# MultiSignWallet
 
-This is my custom Foundry starter kit for daily use in smart contract development and deployment.
+MultiSignWallet 是一个基于 Solidity 开发的多签名钱包智能合约。它允许多个所有者共同管理以太坊资产，提高资金安全性和管理透明度。
 
-## Usage
+## 功能特性
 
-### Deploying and Verifying a Contract
+- 多所有者管理：支持多个地址作为钱包所有者
+- 交易提议：任何所有者都可以提出交易
+- 交易确认：需要指定数量的所有者确认才能执行交易
+- 交易执行：达到确认阈值后，交易可以被执行
+- 查询待处理交易：可以获取所有待处理的交易列表
 
-1. Source your environment variables:
-
-source .env
-
-2. Run the deployment script:
-
-forge script --account dev --chain sepolia script/deployer.s.sol --rpc-url $SEPOLIA_RPC_URL --broadcast --verify -vvvv --sender 0x2cf56496f155914d84e6eda6e2c0076aeae5b0f0
-
-### Verifying an Already Deployed Contract
-
-forge verify-contract 0x50c56eb8e5c30992cba712246b72b94968263bb9 TradeDevil --chain sepolia
